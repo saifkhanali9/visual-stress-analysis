@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .blurred {
+            filter: blur(4px);
+        }
+        .hidden {
+            visibility: hidden;
+        }
+        td {
+            padding-top: 18px;
+        }
+        body {
+            font-family: sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+
+<table id="tasktable" style="
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 20pt;
+">
+</table>
+<script>
+function getRandomArbitrary(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
+}
+
+
+
+        var tableel = document.getElementById('tasktable')
+        numrows = 20
+        numcols = 100
+
+        for (let n = 0; n<numrows; n++) {
+            row = tableel.insertRow()
+            for (let m = 0; m<numcols; m++) {
+                td = row.insertCell()
+                td.innerText = getRandomArbitrary(0,10)
+            }
+        }
+
+
+        webSocket = new WebSocket('ws://localhost:8765');
+        webSocket.onopen = event => {
+            console.info('connected')
+        }
+        webSocket.onmessage = event => {
+            console.info(`Received ${event.data}`)
+
+            switch(event.data) {
+                case 'focus':
+                    document.getElementById('tasktable').classList.remove('blurred')
+                    document.getElementById('tasktable').classList.remove('hidden')
+                    break;
+                case 'blur':
+                    document.getElementById('tasktable').classList.add('blurred')
+                    document.getElementById('tasktable').classList.remove('hidden')
+                    break;
+                case 'hide':
+                    document.getElementById('tasktable').classList.add('hidden')
+                    break;
+            }
+            
+            
+        }
+        
+    </script>
+</body>
+</html>

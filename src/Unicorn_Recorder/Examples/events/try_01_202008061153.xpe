@@ -1,0 +1,51 @@
+#Expyriment 0.10.0 (Python 3.8.3), .xpe-file, coding: cp1252
+#date: Thu Aug 06 2020 11:53:18
+#sha1: 53e522
+#modules: 
+#display: size=(1920, 1080), window_mode=False, open_gl=2
+#os: uname_result(system='Windows', node='ntw-445', release='10', version='10.0.18362', machine='AMD64', processor='Intel64 Family 6 Model 158 Stepping 13, GenuineIntel')
+Time,Type,Event,Value,Detail,Detail2
+10917,design,log,
+#design: #exp: Motor_Imagery
+#design: block_cnt,block_id,trial_cnt,trial_id
+#design: 0,0,0,0
+#design: 0,0,1,1
+#design: 0,0,2,2
+#design: 0,0,3,3
+10917,design,logged,
+10917,Experiment,started
+10920,Stimulus,presented,0
+10920,Stimulus,played,b'C:\\Users\\BCI-SE~1\\AppData\\Local\\Temp\\expyriment_5mz5fidp\\freq500_dur500.0_fk0gmogd.wav'
+11923,Stimulus,presented,0
+12426,Stimulus,presented,3
+14928,Stimulus,presented,1
+15430,Stimulus,presented,0
+15430,Stimulus,played,b'C:\\Users\\BCI-SE~1\\AppData\\Local\\Temp\\expyriment_5mz5fidp\\freq500_dur500.0_fk0gmogd.wav'
+16432,Stimulus,presented,0
+16935,Stimulus,presented,4
+19437,Stimulus,presented,1
+19939,Stimulus,presented,0
+19939,Stimulus,played,b'C:\\Users\\BCI-SE~1\\AppData\\Local\\Temp\\expyriment_5mz5fidp\\freq500_dur500.0_fk0gmogd.wav'
+20941,Stimulus,presented,0
+21444,Stimulus,presented,5
+23946,Stimulus,presented,1
+24448,Stimulus,presented,0
+24448,Stimulus,played,b'C:\\Users\\BCI-SE~1\\AppData\\Local\\Temp\\expyriment_5mz5fidp\\freq500_dur500.0_fk0gmogd.wav'
+25450,Stimulus,presented,0
+25953,Stimulus,presented,6
+28455,Stimulus,presented,1
+28955,Experiment,ended
+28962,Stimulus,presented,9
+32267,stderr,received,'WARNING:root:Function did not specify path to save to, neither did the class.Attempting to save to C:\\Users\\BCI-Seminar\\Desktop\\'
+32270,stdout,received,'Events [array([1, 0, 1])]'
+32271,stdout,received,"[[ 0.00000000e+00  4.55425656e+05 -1.50923094e+05 ...  1.94432828e+05\n   1.94543062e+05  1.94704625e+05]\n [ 0.00000000e+00  7.26765500e+05  4.63286062e+05 ...  1.95717344e+05\n   1.95967672e+05  1.96636359e+05]\n [ 0.00000000e+00 -3.42213812e+05 -4.22096094e+05 ...  4.18891125e+05\n   4.19153062e+05  4.19967312e+05]\n ...\n [ 0.00000000e+00  6.66666718e+01  6.66666718e+01 ...  6.66666718e+01\n   6.66666718e+01  6.66666718e+01]\n [ 0.00000000e+00  1.00000000e+00  2.00000000e+00 ...  6.39800000e+03\n   6.39900000e+03  6.40000000e+03]\n [ 0.00000000e+00  1.00000000e+00  1.00000000e+00 ...  1.00000000e+00\n   1.00000000e+00  1.00000000e+00]] ['EEG0', 'EEG1', 'EEG2', 'EEG3', 'EEG4', 'EEG5', 'EEG6', 'EEG7', 'EEG8', 'EEG9', 'EEG10', 'EEG11', 'EEG12', 'EEG13', 'EEG14', 'EEG15', 'EEG16']"
+32271,stdout,received,'Creating RawArray with float64 data, n_channels=17, n_times=6401'
+32272,stdout,received,'    Range : 0 ... 6400 =      0.000 ...    25.600 secs'
+32272,stdout,received,'Ready.'
+32272,stderr,received,'WARNING:root:Overwriting saved file'
+32272,stderr,received,'C:\\Users\\BCI-Seminar\\PycharmProjects\\bison_not_seminar\\src\\Unicorn_Recorder\\unicorn_recorder.py:411: RuntimeWarning: This filename (C:\\Users\\BCI-Seminar\\Desktop\\Akib_060820_right_1.fif) does not conform to MNE naming conventions. All raw files should end with raw.fif, raw_sss.fif, raw_tsss.fif, raw.fif.gz, raw_sss.fif.gz, raw_tsss.fif.gz or _meg.fif\n  raw.save(path + filename, overwrite=overwrite)'
+32273,stdout,received,'Overwriting existing file.'
+32273,stdout,received,'Writing C:\\Users\\BCI-Seminar\\Desktop\\Akib_060820_right_1.fif'
+32280,stdout,received,'Closing C:\\Users\\BCI-Seminar\\Desktop\\Akib_060820_right_1.fif [done]'
+32280,stdout,received,'File successfully saved'
+32280,stdout,received,'Killing remote'

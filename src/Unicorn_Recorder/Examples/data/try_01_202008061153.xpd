@@ -1,0 +1,15 @@
+#Expyriment 0.10.0 (Python 3.8.3), .xpd-file, coding: cp1252
+#date: Thu Aug 06 2020 11:53:18
+#--EXPERIMENT INFO
+#e mainfile: try.py
+#e sha1: 53e522
+#e modules: 
+#e Experiment: Motor_Imagery
+#e no between subject factors
+#e Block 0: 1
+#e     block factors: 
+#e     n trials: 4
+#e     trial factors: 
+#--SUBJECT INFO
+#s id: 1
+subject_id,
